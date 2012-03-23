@@ -1,4 +1,4 @@
-# Twitty - An Unsophisticated Twitter Timeline Client (for browsers)
+# Twitty - An Unsophisticated Twitter Timeline Client
 
 &copy; 2012 Jason Frame [ [jason@onehackoranother.com](mailto:jason@onehackoranother.com) / [@jaz303](http://twitter.com/jaz303) ]
 
