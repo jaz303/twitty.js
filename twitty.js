@@ -1,6 +1,6 @@
 (function(exports) {
   
-  var INTERVALS = [[86400, 'day'], [3600, 'hour'], [60, 'minute'], [1, 'seconds']],
+  var INTERVALS = [[86400, 'day'], [3600, 'hour'], [60, 'minute'], [1, 'second']],
       INTENT    = 'https://twitter.com/intent/';
   
   var nextID    = 0;
