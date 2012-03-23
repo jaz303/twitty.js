@@ -1,0 +1,40 @@
+# Twitty - An Unsophisticated Twitter Timeline Client (for browsers)
+
+&copy; 2012 Jason Frame [ [jason@onehackoranother.com](mailto:jason@onehackoranother.com) / [@jaz303](http://twitter.com/jaz303) ]
+
+## Overview
+
+Very simple, no-frills method of accessing a user's timeline in the browser. For displaying "latest tweet"
+lists and the like.
+
+No dependencies.
+
+## Try it out
+
+    var twitty = new Twitty();
+    twitty.getUserTimeline('jaz303', function(tweets) {
+       for (var i = 0; i < tweets.length; i++) {
+           
+           var tweet = tweets[i];
+           
+           // Each tweet is a JSON object as returned by the standard Twitter JSON API.
+           // The prototype is augmented with a few extra convenience methods:
+           
+           // Return tweet text with URLs and screen-names converted to hyperlinks:
+           tweet.linkify();
+           
+           // Return the permalink to this tweet:
+           tweet.permaLink();
+           
+           // Return Twitter intent links for the following actions:
+           tweet.replyLink();
+           tweet.retweetLink();
+           tweet.favouriteLink();
+           
+           // Returns an English approximation of the relative time of this tweet:
+           tweet.relativeTimeInWords();
+           
+       } 
+    });
+    
+
