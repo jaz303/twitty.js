@@ -37,7 +37,6 @@
     getUserTimeline: function(screenName, callback) {
       var localCallback = function(tweets) {
         tweets = tweets || [];
-        console.log(tweets);
         for (var i = 0; i < tweets.length; i++) {
           tweets[i].prototype = tweetMethods;
           tweets[i].__proto__ = tweetMethods;
