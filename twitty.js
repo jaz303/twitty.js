@@ -11,11 +11,9 @@
   
   Tweet.prototype = {
     linkify: function() {
-      return this.text.replace(/(https?:\/\/[^\s]+)/g, function() { // regex needs work
-        return "<a href='" + RegExp.$1 + "'>" + RegExp.$1 + "</a>";
-      }).replace(/@(\w+)/g, function() {
-        return "<a href='http://twitter.com/" + RegExp.$1 + "'>@" + RegExp.$1 + "</a>";
-      });
+      return this.text.replace(/(https?:\/\/[^\s]+)/g,  '<a href="$1">$1</a>')
+                      .replace(/#(\w+)/g,               '<a href="http://twitter.com/search/%23$1">#$1</a>')
+                      .replace(/@(\w+)/g,               '<a href="http://twitter.com/$1">@$1</a>');
     },
 
     permaLink: function() { return 'https://twitter.com/' + this.user.screen_name + '/status/' + this.id; },
