@@ -2,6 +2,11 @@
 
 &copy; 2012 Jason Frame [ [jason@onehackoranother.com](mailto:jason@onehackoranother.com) / [@jaz303](http://twitter.com/jaz303) ]
 
+## This library is obsolete!
+
+Oh well, it was good while it lasted; unforunately Twitter's latest round of API nerfing has broken `twitty.js` forever.
+The code will be preserved here for historical purposes only.
+
 ## Overview
 
 Very simple, no-frills method of accessing a user's timeline in the browser. For displaying "latest tweet"
